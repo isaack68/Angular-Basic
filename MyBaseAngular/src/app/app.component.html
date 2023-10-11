@@ -1,0 +1,33 @@
+<!-- <div class="container-fluid"> -->
+  <div *ngIf="!flag" style="background-color: white">
+  </div>
+  <div *ngIf="flag" class="container-fluid p-0">
+      <div class="row global-header__container" style="background-color: black;">
+          <div class="col-md-8 col-sm-6">
+              <div >
+                  <img class="eylogothumbnail" src="assets/images/buildpracticeicon.svg">
+              </div>
+  
+          </div>
+      </div>
+
+      
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <div class="row footer global-footer__container">
+    <div class="col-md-8">
+        <!-- <div [routerLink]="['/home']">
+            <img class="eylogothumbnail" src="../assets/images/EY_Logo_Beam_RGB_White_Yellow.png">
+        </div> -->
+    </div>
+    <div class="col-md-2" style="text-align: right; margin-top: -9px;">
+        <button class="sign-in-button">Contact Us</button> 
+       
+    </div>
+    <div class="col-md-2" style="margin-top: -9px;">
+        
+        <button class="sign-in-button">Terms Of Use</button>
+    </div>
+</div>

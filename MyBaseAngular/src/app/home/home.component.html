@@ -1,0 +1,62 @@
+<p>Logged In</p>
+<div class="page-main-content">
+    <div class="row">
+      <div class="col-7 ml-4 mt-5 home-container">
+        <h1 class="large-announce-text">Title<span class="ml-2 version-announcement-text" [style.color]="betaColor">BETA</span></h1>
+        <p class="large-announce-text-second">Description</p>
+        <div class="row">
+          <button [disabled]="disabled1" mt-0 class="annouce-button center-contents" style="background-color: #3f51b5" [routerLink]="'/questionnaires/'+surveyId+'/1'">{{text1}}</button>
+          <button [disabled]="disabled2" mt-0 class="annouce-button center-contents" [routerLink]="'/report/'+surveyId">See Result</button>
+        </div>
+      </div>
+    
+      <div class="col-4 mt-4 center-contents">
+        <img class="main-page-image" src="assets/images/soap.png" alt="devsecops circle">
+      </div>
+    </div>
+    <div row="">
+    
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        <div class="new-assessment">
+          <h1 style="padding-bottom: 10px; font-size: x-large;display: grid;"> Evaluate Core Areas <span
+              style="color: #0078d4;">&#9866;</span></h1>
+          <div class="row" style="padding-bottom: 30px;">
+            <div class="col-3">
+              <div class="new-assessment-card">
+                <img class="icon-style" src="assets/images/systemarchitectureicon.svg">
+                System Architecture
+              </div>
+            </div>
+    
+            <div class="col-3">
+              <div class="new-assessment-card">
+                <img class="icon-style" src="assets/images/buildpracticeicon.svg">
+                Build Practice
+              </div>
+            </div>
+    
+            <div class="col-3">
+              <div class="new-assessment-card">
+                <img class="icon-style" src="assets/images/securityicon.svg">
+                Security
+              </div>
+            </div>
+    
+            <div class="col-3">
+              <div class="new-assessment-card">
+                <img class="icon-style" src="assets/images/sourcecontrolicon.svg">
+                Source control
+              </div>
+            </div>
+          </div>
+    
+          <div class="row">
+            <p class="new-assessment-title" routerLink="/questionnaires/S03/1" style="margin-left: 43%;">Start a
+              new assessment <span>&#8594;</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
